@@ -63,7 +63,6 @@ import org.thoughtcrime.securesms.jobs.ProfileUploadJob;
 import org.thoughtcrime.securesms.jobs.RefreshSvrCredentialsJob;
 import org.thoughtcrime.securesms.jobs.RetrieveProfileJob;
 import org.thoughtcrime.securesms.jobs.RetrieveRemoteAnnouncementsJob;
-import org.thoughtcrime.securesms.SecuresmsEventBusIndex;
 import org.thoughtcrime.securesms.jobs.StoryOnboardingDownloadJob;
 import org.thoughtcrime.securesms.jobs.SubscriptionKeepAliveJob;
 import org.thoughtcrime.securesms.keyvalue.KeepMessagesDuration;
@@ -114,7 +113,7 @@ import rxdogtag2.RxDogTag;
 
 /**
  * Will be called once when the TextSecure process is created.
- *
+ * <p>
  * We're using this as an insertion point to patch up the Android PRNG disaster,
  * to initialize the job manager, and to check for GCM registration freshness.
  *
