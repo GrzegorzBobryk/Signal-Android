@@ -189,7 +189,6 @@ public class ViewOnceMessageView extends LinearLayout {
     return R.string.RevealableMessageView_view_photo;
   }
 
-  //GB
   @Subscribe(sticky = true, threadMode = ThreadMode.MAIN)
   public void onEventAsync(final PartProgressEvent event) {
     if (event.attachment.equals(attachment)) {

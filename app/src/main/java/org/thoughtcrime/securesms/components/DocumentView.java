@@ -144,7 +144,6 @@ public class DocumentView extends FrameLayout {
     this.downloadButton.setEnabled(enabled);
   }
 
-  //GB
   @Subscribe(sticky = true, threadMode = ThreadMode.MAIN)
   public void onEventAsync(final PartProgressEvent event) {
     if (documentSlide != null && event.attachment.equals(documentSlide.asAttachment())) {

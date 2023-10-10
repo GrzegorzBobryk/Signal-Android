@@ -539,7 +539,6 @@ public final class AudioView extends FrameLayout {
     }
   }
 
-  //GB
   @Subscribe(sticky = true, threadMode = ThreadMode.MAIN)
   public void onEventAsync(final PartProgressEvent event) {
     if (audioSlide != null && circleProgress != null && event.attachment.equals(audioSlide.asAttachment())) {

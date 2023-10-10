@@ -819,7 +819,6 @@ public class WebRtcCallActivity extends BaseActivity implements SafetyNumberChan
     callScreen.postDelayed(WebRtcCallActivity.this::finish, delayMillis);
   }
 
-  //GB
   @Subscribe(sticky = true, threadMode = ThreadMode.MAIN)
   public void onEventMainThread(@NonNull WebRtcViewModel event) {
     Log.i(TAG, "Got message from service: " + event);

@@ -52,7 +52,6 @@ public final class NewDeviceTransferFragment extends DeviceTransferFragment {
   }
 
   private class ServerTaskListener {
-    //GB
     @Subscribe(threadMode = ThreadMode.MAIN)
     public void onEventMainThread(@NonNull NewDeviceServerTask.Status event) {
       status.setText(getString(R.string.DeviceTransfer__d_messages_so_far, event.getMessageCount()));

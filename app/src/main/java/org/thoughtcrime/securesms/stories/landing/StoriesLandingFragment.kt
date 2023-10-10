@@ -145,7 +145,6 @@ class StoriesLandingFragment : DSLSettingsFragment(layoutId = R.layout.stories_l
     updateReminders()
   }
 
-  //GB
   @Subscribe(threadMode = ThreadMode.MAIN)
   fun onEvent(event: ReminderUpdateEvent?) {
     updateReminders()

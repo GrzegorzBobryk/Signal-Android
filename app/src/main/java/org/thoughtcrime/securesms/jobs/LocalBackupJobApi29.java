@@ -264,7 +264,6 @@ public final class LocalBackupJobApi29 extends BaseJob {
       this.verifyProgressTitle = verifyProgressTitle;
     }
 
-    //GB
     @Subscribe(threadMode = ThreadMode.POSTING)
     public void onEvent(BackupEvent event) {
       if (notification == null) {

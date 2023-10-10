@@ -355,7 +355,6 @@ public abstract class DeviceTransferSetupFragment extends LoggingFragment {
     CommunicationActions.openBrowserLink(requireContext(), getString(R.string.transfer_support_url));
   }
 
-  //GB
   @Subscribe(sticky = true, threadMode = ThreadMode.MAIN)
   public void onEventMainThread(@NonNull TransferStatus event) {
     viewModel.onTransferEvent(event);

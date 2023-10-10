@@ -4011,13 +4011,11 @@ class ConversationFragment :
 
   //region Event Bus
 
-  //GB
   @Subscribe(threadMode = ThreadMode.POSTING)
   fun onIdentityRecordUpdate(event: IdentityRecord?) {
     viewModel.updateIdentityRecordsInBackground()
   }
 
-  //GB
   @Subscribe(threadMode = ThreadMode.MAIN, sticky = true)
   fun onStickerPackInstalled(event: StickerPackInstallEvent?) {
     if (event == null) {
@@ -4035,19 +4033,16 @@ class ConversationFragment :
     }
   }
 
-  //GB
   @Subscribe(threadMode = ThreadMode.MAIN, sticky = true)
   fun onGroupCallPeekEvent(groupCallPeekEvent: GroupCallPeekEvent) {
     groupCallViewModel.onGroupCallPeekEvent(groupCallPeekEvent)
   }
 
-  //GB
   @Subscribe(threadMode = ThreadMode.MAIN)
   fun onReminderUpdateEvent(reminderUpdateEvent: ReminderUpdateEvent) {
     viewModel.refreshReminder()
   }
 
-  //GB
   @Subscribe(threadMode = ThreadMode.MAIN)
   fun onRecaptchaRequiredEvent(recaptchaRequiredEvent: RecaptchaRequiredEvent) {
     RecaptchaProofBottomSheetFragment.show(childFragmentManager)

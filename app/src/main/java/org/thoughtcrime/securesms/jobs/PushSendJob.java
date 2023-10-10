@@ -636,7 +636,6 @@ public abstract class PushSendJob extends SendJob {
       }
     }
 
-    //GB
     @Subscribe(threadMode = ThreadMode.POSTING)
     public void onSuccessReceived(SubmitRateLimitPushChallengeJob.SuccessEvent event) {
       Log.i(TAG, "[Proof Required] Received a successful result!");

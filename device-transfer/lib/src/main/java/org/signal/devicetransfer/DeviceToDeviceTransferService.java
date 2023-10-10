@@ -96,7 +96,6 @@ public class DeviceToDeviceTransferService extends Service implements ShutdownCa
     EventBus.getDefault().register(this);
   }
 
-  //GB
   @Subscribe(sticky = true, threadMode = ThreadMode.MAIN)
   public void onEventMainThread(@NonNull TransferStatus event) {
     updateNotification(event);

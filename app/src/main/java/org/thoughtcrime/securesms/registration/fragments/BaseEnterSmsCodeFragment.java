@@ -271,7 +271,6 @@ public abstract class BaseEnterSmsCodeFragment<ViewModel extends BaseRegistratio
     EventBus.getDefault().unregister(this);
   }
 
-  //GB
   @Subscribe(threadMode = ThreadMode.MAIN)
   public void onVerificationCodeReceived(@NonNull ReceivedSmsEvent event) {
     verificationCodeView.clear();

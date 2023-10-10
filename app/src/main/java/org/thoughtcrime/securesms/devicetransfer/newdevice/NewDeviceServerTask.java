@@ -75,7 +75,6 @@ final class NewDeviceServerTask implements ServerTask {
     Log.i(TAG, "Receive took: " + (end - start));
   }
 
-  //GB
   @Subscribe(threadMode = ThreadMode.POSTING)
   public void onEvent(BackupEvent event) {
     if (event.getType() == BackupEvent.Type.PROGRESS) {

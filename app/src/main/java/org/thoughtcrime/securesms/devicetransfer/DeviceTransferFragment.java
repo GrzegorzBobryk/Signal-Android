@@ -122,7 +122,6 @@ public abstract class DeviceTransferFragment extends LoggingFragment {
   protected abstract void navigateToTransferComplete();
 
   private class TransferModeListener {
-    //GB
     @Subscribe(sticky = true, threadMode = ThreadMode.MAIN)
     public void onEventMainThread(@NonNull TransferStatus event) {
       if (event.getTransferMode() != TransferStatus.TransferMode.SERVICE_CONNECTED) {

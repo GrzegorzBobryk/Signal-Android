@@ -412,7 +412,6 @@ class TransferControlView @JvmOverloads constructor(context: Context, attrs: Att
     store.update { it.copy(isClickable = clickable) }
   }
 
-  //GB
   @Subscribe(sticky = true, threadMode = ThreadMode.MAIN)
   fun onEventAsync(event: PartProgressEvent) {
     val attachment = event.attachment

@@ -203,7 +203,6 @@ public final class LocalBackupJob extends BaseJob {
       this.verifyProgressTitle = verifyProgressTitle;
     }
 
-    //GB
     @Subscribe(threadMode = ThreadMode.POSTING)
     public void onEvent(BackupEvent event) {
       if (notification == null) {

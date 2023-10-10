@@ -96,7 +96,6 @@ public class MainActivity extends AppCompatActivity {
     EventBus.getDefault().register(this);
   }
 
-  //GB
   @Subscribe(sticky = true, threadMode = ThreadMode.MAIN)
   public void onEventMainThread(@NonNull TransferStatus event) {
     TextView text = new TextView(this);

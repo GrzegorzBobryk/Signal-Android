@@ -63,7 +63,6 @@ public final class OldDeviceTransferFragment extends DeviceTransferFragment {
       formatter.setMaximumFractionDigits(1);
     }
 
-    //GB
     @Subscribe(threadMode = ThreadMode.MAIN)
     public void onEventMainThread(@NonNull OldDeviceClientTask.Status event) {
       if (event.isDone()) {
