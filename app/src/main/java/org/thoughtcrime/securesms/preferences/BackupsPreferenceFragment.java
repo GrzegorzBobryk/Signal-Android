@@ -134,6 +134,7 @@ public class BackupsPreferenceFragment extends Fragment {
     }
   }
 
+  //GB
   @Subscribe(threadMode = ThreadMode.MAIN)
   public void onEvent(BackupEvent event) {
     if (event.getType() == BackupEvent.Type.PROGRESS || event.getType() == BackupEvent.Type.PROGRESS_VERIFYING) {

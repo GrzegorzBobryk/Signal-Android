@@ -55,6 +55,7 @@ final class OldDeviceClientTask implements ClientTask {
     Log.i(TAG, "Sending took: " + (end - start));
   }
 
+  //GB
   @Subscribe(threadMode = ThreadMode.POSTING)
   public void onEvent(BackupEvent event) {
     if (event.getType() == BackupEvent.Type.PROGRESS) {

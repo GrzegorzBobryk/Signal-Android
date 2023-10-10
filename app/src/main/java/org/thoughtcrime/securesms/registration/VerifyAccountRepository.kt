@@ -223,7 +223,7 @@ class VerifyAccountRepository(private val context: Application) {
 
     @Subscribe
     fun onChallengeEvent(pushChallengeEvent: PushChallengeEvent) {
-      challenge = pushChallengeEvent.challenge
+      challenge = pushChallengeEvent.challenge()
       latch.countDown()
     }
   }

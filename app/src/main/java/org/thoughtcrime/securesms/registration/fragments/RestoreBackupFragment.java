@@ -368,6 +368,7 @@ public final class RestoreBackupFragment extends LoggingFragment {
     EventBus.getDefault().unregister(this);
   }
 
+  //GB
   @Subscribe(threadMode = ThreadMode.MAIN)
   public void onEvent(@NonNull BackupEvent event) {
     long count = event.getCount();

@@ -103,6 +103,7 @@ public final class PushChallengeRequest {
       }
     }
 
+    //GB
     @Subscribe(threadMode = ThreadMode.POSTING)
     public void onChallengeEvent(@NonNull PushChallengeEvent pushChallengeEvent) {
       challenge.set(pushChallengeEvent.challenge);

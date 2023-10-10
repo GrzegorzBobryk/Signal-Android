@@ -23,6 +23,7 @@ public class SqlCipherMigrationConstraintObserver implements ConstraintObserver 
     this.notifier = notifier;
   }
 
+  //GB
   @Subscribe(threadMode = ThreadMode.MAIN)
   public void onEvent(SqlCipherNeedsMigrationEvent event) {
     if (notifier != null) notifier.onConstraintMet(REASON);

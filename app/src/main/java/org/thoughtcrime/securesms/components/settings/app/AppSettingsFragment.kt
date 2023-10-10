@@ -66,6 +66,7 @@ class AppSettingsFragment : DSLSettingsFragment(
     }
   }
 
+  //GB
   @Subscribe(threadMode = ThreadMode.MAIN)
   fun onEvent(event: ReminderUpdateEvent?) {
     updateReminders()

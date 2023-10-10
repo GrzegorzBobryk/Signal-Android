@@ -1510,11 +1510,13 @@ public class ConversationListFragment extends MainFragment implements ActionMode
     endActionModeIfActive();
   }
 
+  //GB
   @Subscribe(threadMode = ThreadMode.MAIN)
   public void onEvent(ReminderUpdateEvent event) {
     updateReminders();
   }
 
+  //GB
   @Subscribe(threadMode = ThreadMode.MAIN, sticky = true)
   public void onEvent(MessageSender.MessageSentEvent event) {
     EventBus.getDefault().removeStickyEvent(event);

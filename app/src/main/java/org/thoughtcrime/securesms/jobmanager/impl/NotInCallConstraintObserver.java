@@ -26,6 +26,7 @@ public final class NotInCallConstraintObserver implements ConstraintObserver {
       this.notifier    = notifier;
     }
 
+    //GB
     @Subscribe(sticky = true, threadMode = ThreadMode.MAIN)
     public void consume(@NonNull WebRtcViewModel viewModel) {
       NotInCallConstraint constraint = new NotInCallConstraint.Factory().create();

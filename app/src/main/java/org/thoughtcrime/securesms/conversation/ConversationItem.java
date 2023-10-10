@@ -2520,6 +2520,7 @@ public final class ConversationItem extends RelativeLayout implements BindableCo
       }
     }
 
+    //GB
     @Subscribe(sticky = true, threadMode = ThreadMode.MAIN)
     public void onEventAsync(PartProgressEvent event) {
       float       progressPercent    = ((float) event.progress) / event.total;

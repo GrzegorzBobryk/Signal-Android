@@ -199,6 +199,7 @@ public class ApplicationMigrations {
       final int  uiVersion = uiBlockingVersion;
 
       EventBus.getDefault().register(new Object() {
+        //GB
         @Subscribe(sticky = true, threadMode = ThreadMode.MAIN)
         public void onMigrationComplete(MigrationCompleteEvent event) {
           Log.i(TAG, "Received MigrationCompleteEvent for version " + event.getVersion() + ". (Current: " + CURRENT_VERSION + ")");
